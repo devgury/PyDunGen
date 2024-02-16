@@ -28,7 +28,7 @@ def create_v_tunnel(y1, y2, x, dungeon):
         dungeon[y][x] = "."
 
 def create_dungeon_with_corridors(width, height, max_rooms, room_min_size, room_max_size):
-    dungeon = [[" " for _ in range(width)] for _ in range(height)]
+    dungeon = [["#" for _ in range(width)] for _ in range(height)]
     rooms = []
 
     for _ in range(max_rooms):
